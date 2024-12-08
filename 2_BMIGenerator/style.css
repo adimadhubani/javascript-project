@@ -1,0 +1,12 @@
+.cont{
+    background-color: #797978;
+    width: 100%;
+    height: 714px;
+
+}
+#height,
+#weight {
+  width: 150px;
+  height: 25px;
+  margin-top: 30px;
+}

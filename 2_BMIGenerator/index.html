@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../styles.css" />
+    <title>BMI Calculator</title>
+   
+</head>
+
+<style>
+    /* Container for centering the button */
+    .container {
+    text-align: center;
+}
+
+/* Button styles */
+.beautiful-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007BFF;
+    text-decoration: none;  /* Remove underline */
+    border-radius: 30px;    /* Rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.2); /* Subtle shadow */
+    transition: all 0.3s ease;
+}
+
+/* Hover effect for the button */
+.beautiful-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-5px); /* Lifts the button on hover */
+    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.3); /* Larger shadow */
+}
+
+/* Active state for a pressed effect */
+.beautiful-button:active {
+    transform: translateY(2px); /* Button appears pressed */
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2); /* Smaller shadow */
+}
+
+/* Focus state (optional) */
+.beautiful-button:focus {
+    outline: none; /* Remove focus outline */
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Outline when focused */
+}
+</style>
+<body>
+            <nav>
+                <div class="container">
+                    <a href="/" class="beautiful-button">Click Me!</a>
+                </div>
+             
+            </nav>
+            <div class="cont">
+                <div class="h" style="text-align: center; ">
+
+                    <h1>BMI Calculator</h1>           
+                </div>
+
+                <form style="margin-top: 53px; padding-left: 65px;">
+                    <p><label for="">Height in CM :</label><input type="text" id="height"></p>
+                    <p style="padding-top: 35px; height: 123px;"><label for="">Weight in KG :</label><input type="text" id="weight"></p>
+                    <div class="h" style="text-align: center;">
+
+                       <button style="width: 225px; height: 35px; border-radius: 5px; text-decoration: solid; font-size: 25px; margin-bottom: 8px;">calculate</button>
+                       <div id="results"></div>
+                       <div id="weight-guide">
+                           <h3>BMI Weight Guide</h3>
+                           <p>Under Weight = Less than 18.6</p>
+                           <p>Normal Range = 18.6 and 24.9</p>
+                           <p style="padding-bottom: 23px;">Overweight = Greater than 24.9</p>
+                        </div>
+        </div>
+            </form>
+
+            </div>
+
+      
+</body>
+<script src="script.js"></script>
+</html>
